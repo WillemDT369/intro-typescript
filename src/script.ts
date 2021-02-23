@@ -1,11 +1,10 @@
-"use strict";
 (function() {
     document.getElementById('guess-form')!.addEventListener("submit", compareUserGuess);
 
     function compareUserGuess (event: any) {
         event.preventDefault();
 
-        const secretNumber = generateSecretNumber();
+        const secretNumber: number = generateSecretNumber();
         const userNumber = Number((<HTMLInputElement>document.getElementById('guess')).value);
 
         if (secretNumber == userNumber) {
@@ -16,7 +15,7 @@
     }
 
     function generateSecretNumber() {
-        const secretNumber = getRandomArbitrary(1, 22);
+        const secretNumber: number = getRandomArbitrary(1, 22);
 
         return secretNumber;
     }
