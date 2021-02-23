@@ -1,6 +1,6 @@
 "use strict";
 (function() {
-    document.getElementById('guess-form').addEventListener("submit", compareUserGuess);
+    document.getElementById('guess-form')!.addEventListener("submit", compareUserGuess);
 
     function compareUserGuess (event) {
         event.preventDefault();
