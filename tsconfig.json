@@ -3,6 +3,7 @@
       "outDir": "./public",
       "allowJs": true,
       "target": "es5",
+      "strict": true
     },
     "include": ["./src/script.ts"]
   }
